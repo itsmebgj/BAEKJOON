@@ -11,7 +11,7 @@ public class Main {
         int e = sc.nextInt();
 
         System.out.println((a*a+b*b+c*c+d*d+e*e)%10);
-
+        sc.close();
     }
 }
 /* for문을 사용한 경우
