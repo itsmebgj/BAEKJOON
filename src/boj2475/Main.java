@@ -25,7 +25,7 @@ public class Main {
         int sum = 0;
         for (int i = 0; i < 5; i++) {
             int temp = scanner.nextInt();
-            sum += temp * temp;
+            sum += temp * temp; //"temp*temp를 sum에 더한다"
         }
 
         int result = sum % 10;
