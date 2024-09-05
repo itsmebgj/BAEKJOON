@@ -15,6 +15,13 @@ public class Main {
         } else if (a == b || b == c || c == a) {
             // 같은 눈이 2개, 삼항연산자 (조건 ? 참일 때의 값 : 거짓일 때의 값)
             int repeatedValue = (a == b) ? a : (b == c ? b : c);
+            /*
+            첫 번째 조건 (a == b)
+            만약 a가 b와 같다면, repeatedValue에 a의 값이 할당됩니다.
+            첫 번째 조건이 거짓일 경우
+            삼항 연산자의 : 뒤로 넘어가 다음 조건 (b == c ? b : c)가 평가됩니다.
+            만약 b가 c와 같다면, b의 값이 할당되고, 그렇지 않다면 c의 값이 할당됩니다.
+            */
             System.out.println(1000 + repeatedValue * 100);
         } else {
             // 모두 다른 눈, Math.max()사용해서 둘중 큰 수 출력
